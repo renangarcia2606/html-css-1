@@ -7,9 +7,17 @@
     
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Oswald:wght@200..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+        
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+
         h1{
             color: antiquewhite;
             text-align: center;
+            font-family: "Titillium Web", sans-serif;
+            font-size: 50px;
         }
         body{
             background-color: darkgrey;
@@ -51,9 +59,9 @@
         }
 
 
-        footer{background-color: black;
+        footer{background-color: rgb(10, 10, 10);
             text-align: center;
-        
+            padding: 5px;
         }
 
         footer > p{color: antiquewhite;}
@@ -61,12 +69,20 @@
         section.normal{background-color: white;
             margin-left: -8px;
             margin-right: -8px;
+            font-family: "Gwendolyn", cursive;
+            font-size: 30px;
+            font-weight: bolder;
+
             
         }
 
         section.imagem{background-color: rgb(36, 36, 36);
             margin-left: -8px;
             margin-right: -8px;
+            font-family: "Gwendolyn", cursive;
+            font-size: 30px;
+            font-weight: bolder;
+            box-shadow: inset 6px 6px 13px 0px black;
             
             
             
@@ -75,8 +91,10 @@
 
         section.imagem > p{
             background-color: rgba(104, 101, 101, 0.486);
-            width: 300px;
+            width: 390px;
             border-radius: 10px;
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px 0px black;
         }
 
         section{
@@ -84,6 +102,27 @@
             padding-bottom: 15vh;
             line-height: 2em;
             padding-left: 20px;
+            
+            
+        }
+
+        section > p{
+            padding-bottom: 2em;
+        }
+
+        section#img01{
+            background-image: url('../imagens/background001.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            
+
+        }
+
+        section#img02{
+
+            background-image: url('../imagens/background002.jpg');
+            background-attachment: fixed;
+            background-size: cover;
         }
 
         
@@ -117,7 +156,7 @@
 
 
 
-    <section class="imagem">
+    <section class="imagem" id="img01">
         <p>
             kalmkwmdkamkmwmdkamslkmd <br>
             ajnsdjknnwjnansnjd <br>
@@ -152,7 +191,7 @@
     </section>
 
 
-    <section class="imagem">
+    <section class="imagem" id="img02">
         <p>
             eaapwlkdokawkdkapwkdpokaowpkd <br>
             awhbdhbahbdwbuahbwubdabwbdhuba <br>
