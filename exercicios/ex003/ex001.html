@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>efeito zebrado em tabela</title>
+    <style>
+        table{border: solid black;
+            height: 140px;
+            width: 300px;
+            border-collapse: collapse;
+        }
+
+        thead{background-color: darkcyan;
+            color: white;
+        }
+
+        td,th{border: solid black;
+            text-align: center;
+
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: rgba(120, 120, 120, 0.73);
+        }
+    </style>
+
+</head>
+<body>
+
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>nome</th>
+                <td>nota</td>
+
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>renan</td>
+                <td>10</td>
+            </tr>
+            <td>matheus</td>
+            <td>7</td>
+
+            <tr>
+                <td>lucas</td>
+                <td>7</td>
+                
+            </tr>
+            <tr>
+                <td>arthur</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>joao</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>lucas</td>
+                <td>4</td>
+            </tr>
+
+            <tr>
+                <td>ju</td>
+                <td>5</td>
+            </tr>
+
+            <tr> <td>douglas</td>
+                <td>8</td>
+            
+            </tr>
+
+            
+
+        </tbody>
+    </table>
+    
+</body>
+</html>
